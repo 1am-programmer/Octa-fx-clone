@@ -1,0 +1,54 @@
+body{
+    background-color: red;
+}
+
+/*the div class that the list falls under*/
+.trash{
+    position: relative;
+    display: inline-block;
+}
+.list{
+    font-weight: bolder;
+}
+
+/*The elements that shows when you hover the list*/
+.under{
+    width: 90%;
+    position: absolute;
+    z-index: 1;
+    display: none; /*So nothing shows unless we hover*/
+}
+/*Various div classes under the list*/
+.under1,.under2,.under3,.under4{
+    background-color: white;
+}
+
+/*All the individual links under the list(In the Under1-4)*/
+.under a{
+    color: rgb(78, 72, 72);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    padding: 7px;
+    margin-bottom: 7px;
+}
+/*What should happen when i hover around the individual links above*/
+.under,a:hover{
+    color: blue;
+}
+/*This line helps bring out the hidden display we turned off,so when we hover,we can see it now*/
+.trash:hover .under{
+    display: flex;
+}
+/*When i hover around the li-tag what should happen with the word I want a background color 
+to show around It*/
+.trash:hover .list{
+    background-color: rgb(161, 161, 163);
+    border-radius: 40px;
+    padding-inline: 10px;
+    
+}
+
+
